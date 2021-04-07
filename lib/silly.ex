@@ -1881,6 +1881,17 @@ defmodule Silly do
     tuple_size @things
   end
 
+  @doc """
+  raindrops on roses and whiskers on kittens
+  bright copper kettles and warm woolen mittens
+  brown paper packages tied up with strings
+  this is a tuple just loaded with things
+  when the dog bits
+  or the bee stings
+  or the dog bites a bee
+  I think about some of my favorite things
+  and bite the dog back
+  """
   def things do 
     @things
   end
@@ -1996,6 +2007,9 @@ defmodule Silly do
     String.replace(long_str, " ", "-")
   end
 
+  @doc """
+  a tld, like "gov" or "mil", or "edu"
+  """
   def tld do
     elem(@tld, :rand.uniform(tuple_size(@tld) - 1))
   end
@@ -2011,6 +2025,9 @@ defmodule Silly do
     end
   end
 
+  @doc """
+  an email address, like michael-roundfortran-IfgB@cage.blook.af
+  """
   def email do
     "#{long()}@#{domain()}"
   end
